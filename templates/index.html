@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index">Índice</a>
+            <a href="myprojects">Proyectos</a>
+            <a href="techs">Tecnologías</a>
+            <a href="aboutme">Sobre mi</a>
+        </nav>
+        <div class="my-links">
+            <a href="https://github.com/Gajenjo">
+                <img src="https://cdn-icons-png.flaticon.com/512/536/536452.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/guillermo-ajenjo-853962210/">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="CV">
+                <img src="https://cdn-icons-png.flaticon.com/512/909/909212.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+        </div>
+    </header>
+
+    <div class="initial-text">
+        <h1>¡Hello World!</h1>
+
+    </div>
+
+    <!-- <div class="cmd">
+        <div class="cmd-bar">
+            <div class="cmd-bar-left">
+                <img src="" alt="">
+                <span>C:\Windows\System32\cmd.exe</span>
+            </div>
+            <div class="cmd-bar-right">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </div>
+
+        <div class="cmd-content">
+            <img src="https://steemitimages.com/DQmbaedeTrFuED61jDHAqmZRv2VeX3tWA6pyBi4zoR5T26o/helloworld.gif" alt="" width="40%" height="70%">
+        </div>
+    </div> -->
+
+    <div class="index-box" >
+        <div id="EDA" class="clickeable" onclick="cambiarSeccion('myprojects')">
+            <div class="contenedor" style="Display: grid; place-content: center;">
+                <h3>Mis proyectos</h3>
+                <img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg" alt="projects" width="300" height="200">
+                <div style="max-width: 300px; text-align: justify;">
+                    <p style="text-align: justify;">Esta sección supone un directorio de proyectos pasados y futuros. Haz click aquí para ver todos mis proyectos realizados y una explicación sobre ellos.</p>
+                </div>
+            </div>
+        </div>
+        <div id="tech" class="clickeable" onclick="cambiarSeccion('techs')">
+            <div class="contenedor" style="Display: grid; place-content: center;">
+                <h3>Tecnologías y Habilidades</h3>
+                <img src="https://rms.koenig-solutions.com/Sync_data/CCE_Logo/2960-Top8MostInDemandTechSkillstoBoostYourResumein2022.jpegL.jpg" alt="abilities" width="300" height="200">
+                <p style="max-width: 300px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius fugit repellendus, quod possimus perferendis, officiis reprehenderit magni quae, dignissimos odio dolorum iusto. Voluptatibus eaque alias quas at cumque eum.</p>
+            </div>
+        </div>
+        <div id="aboutme" class="clickeable" onclick="cambiarSeccion('aboutme')">
+            <div class="contenedor" style="Display: grid; place-content: center;">
+            <h4>Sobre mi</h2>
+            <img src="https://st.depositphotos.com/1008096/56726/i/450/depositphotos_567263850-stock-photo-text-card-concept-background.jpg" alt="aboutme" width="300" height="200">
+            <p style="max-width: 300px; text-align: justify;">¡Hola! Soy Guillermo, el creador detrás de este portfolio. En esta sección, comparto mi historia, motivaciones y visión. 
+                Desde mi viaje en el mundo de la tecnología hasta los proyectos que me apasionan, aquí encontrarás un vistazo más cercano a la persona detrás de los códigos y las visualizaciones</p>
+        </div>
+        </div>
+      </div>
+
+      <script>
+        function cambiarSeccion(url) {
+            window.location.href = url;
+        }
+       </script>
+
+</body>
+
+
+</html>

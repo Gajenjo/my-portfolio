@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <title>Mi Portafolio</title>
+</head>
+
+<body> 
+    <header>
+        <nav>
+            <a href="index">Índice</a>
+            <a href="myprojects">Proyectos</a>
+            <a href="techs">Tecnologías</a>
+            <a href="aboutme">Sobre mi</a>
+        </nav>
+        <div class="my-links">
+            <a href="https://github.com/Gajenjo">
+                <img src="https://cdn-icons-png.flaticon.com/512/536/536452.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/guillermo-ajenjo-853962210/">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="CV">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+        </div>
+    </header>
+    <div class="initial-text">
+        <h1>Exploratory Data Analysis</h1>
+    </div>
+    <div class="contenedor" style="place-content: center; margin-top: 60px; height: 50vh; width: 55vw;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSCy_MHp1frXbKbqNq9_adJEmI74JPPfFSwQwo75z3mFM8J3QahQmV4_qGRRhg6PU4nm435jHoTW0z-/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    <div class="initial-text">
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quis nostrum modi incidunt iusto alias deserunt atque sint id eius! Explicabo animi assumenda sequi iusto ea, voluptates laborum officiis recusandae?</h2>
+    </div>
+    <div class="box-plot">
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[0]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[1]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[2]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[3]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[4]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[5]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[6]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[7]|safe }}
+            </div>
+        </div>
+        <div class = "contenedor">
+            <div class="contenedor">
+                {{ plot_div[8]|safe }}
+            </div>
+        </div>
+      </div>
+
+    <script>
+        function cambiarSeccion(url) {
+            window.location.href = url;
+        }
+       </script>
+</body>
+
+</html>

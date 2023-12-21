@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index">Índice</a>
+            <a href="myprojects">Proyectos</a>
+            <a href="techs">Tecnologías</a>
+            <a href="aboutme">Sobre mi</a>
+        </nav>
+        <div class="my-links">
+            <a href="https://github.com/Gajenjo">
+                <img src="https://cdn-icons-png.flaticon.com/512/536/536452.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/guillermo-ajenjo-853962210/">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="CV">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+        </div>
+    </header>
+
+    <div class="initial-text">
+        <h1>Proyecto HR</h1>
+    </div>
+    <div class="contenedor" style="display: flex; flex-direction: column; align-items: center; margin: 60px 0 0 0; max-width: 800px; padding: 0;">
+        <div class="img-box"><img src="https://raw.githubusercontent.com/mgiljimenez/HR_prediction_app/main/img/logo.png" alt="projects" width="600" height="200"></div>
+            <p style="text-align: justify; font-weight: 700;">VivaPharma HR fue un proyecto realizado en el ámbito del bootcamp de Data Science que consistía en la creación de una plataforma de recursos humanos de gestión de personal
+                con integración de Machine Learning para hacer predicciones de riesgos de pérdida de talento.</p>
+        
+    </div>
+    <div class="ML-box">
+        <div class="clickeable-ML">
+            <a href="https://github.com/mgiljimenez/HR_prediction_app">
+                <img src="https://cdn-icons-png.flaticon.com/512/536/536452.png" alt="Descripción de la imagen" width="50" height="50">
+            </a>
+        </div>
+        <div class="clickeable-ML">
+            <a href="https://vivapharma-hr.onrender.com/">
+                <img src="https://cdn-icons-png.flaticon.com/512/8743/8743996.png" alt="Descripción de la imagen" width="50" height="50">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function cambiarSeccion(url) {
+            window.location.href = url;
+        }
+       </script>
+
+</body>
+</html>

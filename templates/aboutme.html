@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index">Índice</a>
+            <a href="myprojects">Proyectos</a>
+            <a href="techs">Tecnologías</a>
+            <a href="aboutme">Sobre mi</a>
+        </nav>
+        <div class="my-links">
+            <a href="https://github.com/Gajenjo">
+                <img src="https://cdn-icons-png.flaticon.com/512/536/536452.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/in/guillermo-ajenjo-853962210/">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+            <a href="CV">
+                <img src="https://cdn-icons-png.flaticon.com/512/909/909314.png" alt="Descripción de la imagen" width="32" height="32">
+            </a>
+        </div>
+    </header>
+
+    <div class="aboutme-box">
+        <img src="https://i.postimg.cc/RhG3Qqdv/Avatar-Maker.png" alt="">
+        <hr style="width: 100%;">        
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta impedit, deserunt qui numquam nam eaque labore, ipsam quis vero dicta tempore veniam beatae voluptate ratione velit corporis, magnam quod?</span>
+    </div>
+
+    <script>
+        function cambiarSeccion(url) {
+            window.location.href = url;
+        }
+       </script>
+
+</body>
+</html>
