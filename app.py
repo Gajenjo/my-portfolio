@@ -11,7 +11,6 @@ import os
 app = Flask(__name__)
 
 port = int(os.environ.get("PORT", 10000))
-app.run(host='0.0.0.0', port=port)
 
 @app.route('/')
 def index_redirect():
@@ -226,4 +225,4 @@ def aboutMe():
     return render_template('aboutme.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)
