@@ -6,7 +6,12 @@ import plotly.graph_objs as go
 
 from data.data import delitos_tipo_py, del_tip_2013, delitos_tipo_pt, corr_delit, gender_2018, gender_2019, gender_2020, gender_2021
 
+import os
+
 app = Flask(__name__)
+
+port = int(os.environ.get("PORT", 10000))
+app.run(host='0.0.0.0', port=port)
 
 @app.route('/')
 def index_redirect():
