@@ -12,14 +12,14 @@ app = Flask(__name__)
 
 port = int(os.environ.get("PORT", 10000))
 
-@app.route('/')
-def index_redirect():
-    return redirect(url_for("index"))
+# @app.route('/index')
+# def index_redirect():
+#     return redirect(url_for("index"))
 
-@app.route('/index')
+@app.route('/')
 def index():
 
-    return render_template('index.html')
+    return render_template('index2.html')
 
 @app.route('/myprojects')
 def myproyects():
